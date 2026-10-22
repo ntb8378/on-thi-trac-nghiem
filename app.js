@@ -7814,17 +7814,31 @@ class QuizApp {
             if (savedBanks) {
                 this.banks = JSON.parse(savedBanks);
             } else {
-                this.banks = [KNGT_BANK, SAMPLE_BANK];
+                this.banks = (window.DEFAULT_BANKS && window.DEFAULT_BANKS.length > 0)
+                    ? [...window.DEFAULT_BANKS]
+                    : [KNGT_BANK, SINHLY_BANK];
             }
         }
 
-        // Đảm bảo bộ đề 150 câu chuẩn luôn có mặt
-        const existingIdx = this.banks.findIndex(b => b.id === 'bank_kngt_gdsk_150_official');
-        if (existingIdx !== -1) {
-            this.banks[existingIdx] = KNGT_BANK;
-        } else {
-            this.banks.unshift(KNGT_BANK);
-        }
+        // TỰ ĐỘNG ĐỒNG BỘ ĐẦY ĐỦ 7 BỘ ĐỀ CHUẨN (1107 CÂU)
+        const officialBanks = (window.DEFAULT_BANKS && window.DEFAULT_BANKS.length > 0)
+            ? window.DEFAULT_BANKS
+            : [KNGT_BANK, SINHLY_BANK];
+
+        officialBanks.forEach(defaultBank => {
+            const existingIdx = this.banks.findIndex(b => 
+                b.id === defaultBank.id || 
+                b.title.trim().toLowerCase() === defaultBank.title.trim().toLowerCase()
+            );
+            if (existingIdx !== -1) {
+                if (this.banks[existingIdx].questions.length < defaultBank.questions.length) {
+                    this.banks[existingIdx] = defaultBank;
+                }
+            } else {
+                this.banks.push(defaultBank);
+            }
+        });
+
         this.saveBanks();
 
         const savedHistory = localStorage.getItem('quizmaster_history');
