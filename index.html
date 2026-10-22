@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster Pro - Phần Mềm Ôn & Thi Trắc Nghiệm Thông Minh</title>
+    <meta name="description" content="Nền tảng ôn thi trắc nghiệm thông minh, tải file đề cương Word, Text, Excel không giới hạn số câu, chế độ học bài flashcard và thi thử trắc nghiệm chuẩn xác.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ambient Background Blobs -->
+    <div class="bg-ambient">
+        <div class="ambient-blob blob-1"></div>
+        <div class="ambient-blob blob-2"></div>
+        <div class="ambient-blob blob-3"></div>
+    </div>
+
+    <!-- Main App Container -->
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="brand-wrapper">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>QuizMaster Pro</h1>
+                    <p>Hệ Thống Ôn Tập & Thi Thử Trắc Nghiệm Thông Minh</p>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button id="btn-share-lan" class="btn btn-secondary" title="Chia sẻ để máy tính hoặc điện thoại khác cùng xem tài liệu">
+                    <i class="fa-solid fa-network-wired" style="color: var(--primary);"></i>
+                    <span id="share-lan-text">Chia sẻ LAN: http://192.168.1.15:8080</span>
+                </button>
+                <button id="btn-theme-toggle" class="btn btn-icon" title="Chuyển chế độ Sáng/Tối">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="btn-export-backup" class="btn btn-secondary" title="Sao lưu toàn bộ câu hỏi">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span>Sao lưu</span>
+                </button>
+                <button id="btn-open-import" class="btn btn-primary">
+                    <i class="fa-solid fa-file-circle-plus"></i>
+                    <span>+ Thêm Đề Cương</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs" id="main-tabs">
+            <button class="tab-btn active" data-tab="tab-banks">
+                <i class="fa-solid fa-folder-open"></i>
+                <span>Thư Viện Đề Cương</span>
+                <span class="badge" id="badge-bank-count">0</span>
+            </button>
+            <button class="tab-btn" data-tab="tab-study">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <span>Ôn Tập & Học Bài</span>
+            </button>
+            <button class="tab-btn" data-tab="tab-exam">
+                <i class="fa-solid fa-stopwatch"></i>
+                <span>Phòng Thi Thử</span>
+            </button>
+            <button class="tab-btn" data-tab="tab-history">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Lịch Sử Điểm Số</span>
+            </button>
+        </nav>
+
+        <!-- ============================================================== -->
+        <!-- TAB 1: THƯ VIỆN ĐỀ CƯƠNG                                        -->
+        <!-- ============================================================== -->
+        <main id="tab-banks" class="tab-content active">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-layer-group" style="color: var(--primary);"></i>
+                        Quản Lý Bộ Đề Cương
+                    </h2>
+                    <p class="section-subtitle">Tải lên file câu hỏi (Word, TXT, Excel) hoặc tạo bộ đề trắc nghiệm để bắt đầu ôn tập</p>
+                </div>
+                <div class="toolbar">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="bank-search-input" placeholder="Tìm kiếm bộ đề...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bulk actions & select all -->
+            <div class="bulk-actions-bar">
+                <label class="bulk-select-all">
+                    <input type="checkbox" id="select-all-banks" class="custom-checkbox">
+                    <span>Chọn tất cả các bộ đề (<span id="selected-banks-count">0</span> đã chọn)</span>
+                </label>
+                <div style="display: flex; gap: 10px;">
+                    <button id="btn-quick-study-selected" class="btn btn-secondary">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>Ôn tập các đề đã chọn</span>
+                    </button>
+                    <button id="btn-quick-exam-selected" class="btn btn-primary">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Thi thử các đề đã chọn</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Question Bank Cards Grid -->
+            <div id="bank-grid" class="bank-grid">
+                <!-- Javascript will render cards here -->
+            </div>
+
+            <!-- Empty State when no question bank -->
+            <div id="bank-empty-state" class="empty-state" style="display: none;">
+                <div class="empty-state-icon">
+                    <i class="fa-solid fa-file-circle-question"></i>
+                </div>
+                <h3>Chưa có bộ đề cương nào</h3>
+                <p>Nhấp vào nút "+ Thêm Đề Cương" bên trên để tải lên file Word (.docx), file văn bản (.txt) hoặc file Excel (.xlsx). Hệ thống sẽ tự động phân tích và tạo bộ câu hỏi ngay lập tức!</p>
+                <button class="btn btn-primary" onclick="document.getElementById('btn-open-import').click()">
+                    <i class="fa-solid fa-upload"></i>
+                    <span>Tải Lên File Ngay</span>
+                </button>
+            </div>
+        </main>
+
+        <!-- ============================================================== -->
+        <!-- TAB 2: ÔN TẬP & HỌC BÀI                                         -->
+        <!-- ============================================================== -->
+        <main id="tab-study" class="tab-content">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-graduation-cap" style="color: var(--primary);"></i>
+                        Chế Độ Ôn Tập & Học Bài
+                    </h2>
+                    <p class="section-subtitle">Luyện từng câu hỏi, kiểm tra đáp án tức thì hoặc học qua thẻ ghi nhớ Flashcard 3D</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <select id="study-bank-selector" class="form-select" style="width: auto; min-width: 200px;">
+                        <!-- Options generated dynamically -->
+                    </select>
+                </div>
+            </div>
+
+            <!-- Study Control Bar -->
+            <div class="study-control-bar">
+                <div class="study-filters">
+                    <button class="filter-btn active" data-filter="all">Tất cả (<span id="count-study-all">0</span>)</button>
+                    <button class="filter-btn" data-filter="unanswered">Chưa làm (<span id="count-study-unanswered">0</span>)</button>
+                    <button class="filter-btn" data-filter="wrong">Làm sai (<span id="count-study-wrong">0</span>)</button>
+                    <button class="filter-btn" data-filter="starred"><i class="fa-solid fa-star" style="color: #eab308;"></i> Đã gắn sao (<span id="count-study-starred">0</span>)</button>
+                </div>
+
+                <div style="display: flex; gap: 8px;">
+                    <button id="btn-toggle-study-mode" class="btn btn-secondary">
+                        <i class="fa-solid fa-clone"></i>
+                        <span id="study-mode-text">Chuyển sang Thẻ Ghi Nhớ (Flashcard)</span>
+                    </button>
+                    <button id="btn-shuffle-study" class="btn btn-secondary" title="Xáo trộn thứ tự câu hỏi">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <span>Trộn câu</span>
+                    </button>
+                    <button id="btn-reset-study-progress" class="btn btn-secondary" title="Làm lại từ đầu">
+                        <i class="fa-solid fa-rotate-right"></i>
+                        <span>Đặt lại</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Study Progress Bar -->
+            <div class="study-progress-wrapper">
+                <div class="study-progress-stats">
+                    <span>Tiến độ học: <strong id="study-progress-text">0/0 câu</strong></span>
+                    <span>Đúng: <strong id="study-correct-text" style="color: var(--success);">0</strong> | Sai: <strong id="study-wrong-text" style="color: var(--danger);">0</strong></span>
+                </div>
+                <div class="progress-bar-track">
+                    <div id="study-progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <!-- Study View 1: List Mode -->
+            <div id="study-list-view">
+                <div id="study-questions-container">
+                    <!-- Render list of questions here -->
+                </div>
+            </div>
+
+            <!-- Study View 2: Flashcard 3D Mode -->
+            <div id="study-flashcard-view" style="display: none;">
+                <div class="flashcard-container">
+                    <div class="flashcard" id="active-flashcard">
+                        <!-- Front Face -->
+                        <div class="flashcard-face flashcard-front">
+                            <div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                                    <span class="question-badge" id="fc-badge">Câu 1</span>
+                                    <button class="star-btn" id="fc-star-btn"><i class="fa-solid fa-star"></i></button>
+                                </div>
+                                <div class="question-text" id="fc-question-text" style="font-size: 18px; margin-bottom: 24px;"></div>
+                                <div id="fc-options-list" class="options-list"></div>
+                            </div>
+                            <div class="flashcard-hint">
+                                <i class="fa-solid fa-hand-pointer"></i>
+                                <span>Nhấp vào thẻ hoặc bấm Phím Space để lật xem đáp án</span>
+                            </div>
+                        </div>
+
+                        <!-- Back Face -->
+                        <div class="flashcard-face flashcard-back">
+                            <div>
+                                <span class="question-badge" style="background: var(--success-bg); color: var(--success); border-color: var(--success);">
+                                    <i class="fa-solid fa-check"></i> ĐÁP ÁN ĐÚNG
+                                </span>
+                                <div id="fc-correct-answer" style="font-size: 20px; font-weight: 700; color: var(--success); margin: 20px 0;"></div>
+                                <div id="fc-explanation" style="font-size: 15px; color: var(--text-secondary); line-height: 1.6;"></div>
+                            </div>
+                            <div class="flashcard-hint">
+                                <i class="fa-solid fa-rotate"></i>
+                                <span>Nhấp lại vào thẻ để lật về câu hỏi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flashcard Navigation Controls -->
+                    <div class="flashcard-nav">
+                        <button id="fc-prev-btn" class="btn btn-secondary">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Câu trước</span>
+                        </button>
+                        <span id="fc-indicator" style="font-weight: 700; color: var(--text-secondary); font-size: 15px;">1 / 100</span>
+                        <button id="fc-next-btn" class="btn btn-primary">
+                            <span>Câu tiếp theo</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ============================================================== -->
+        <!-- TAB 3: PHÒNG THI THỬ                                            -->
+        <!-- ============================================================== -->
+        <main id="tab-exam" class="tab-content">
+            <!-- State 1: Cấu hình thi thử -->
+            <div id="exam-setup-container" class="exam-setup-card">
+                <div style="text-align: center; margin-bottom: 28px;">
+                    <div style="width: 54px; height: 54px; border-radius: var(--radius-lg); background: var(--accent-gradient); display: inline-flex; align-items: center; justify-content: center; font-size: 26px; color: white; margin-bottom: 12px;">
+                        <i class="fa-solid fa-stopwatch"></i>
+                    </div>
+                    <h2 style="font-size: 24px; font-weight: 800;">Thiết Lập Đề Thi Thử</h2>
+                    <p style="color: var(--text-muted); font-size: 14px;">Chọn đề thi, thời gian và cấu hình số lượng câu hỏi để bắt đầu tính giờ</p>
+                </div>
+
+                <!-- 1. Chọn file đề thi (Có hỗ trợ Tick toàn bộ như yêu cầu của user) -->
+                <div class="setup-section">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <label class="setup-section-title">
+                            <i class="fa-solid fa-folder-tree" style="color: var(--primary);"></i>
+                            1. Chọn nội dung file thi thử:
+                        </label>
+                        <label class="bulk-select-all" style="font-size: 13px;">
+                            <input type="checkbox" id="exam-tick-all-banks" class="custom-checkbox">
+                            <span style="font-weight: 700; color: var(--primary);">Tick toàn bộ (Thi tất cả file)</span>
+                        </label>
+                    </div>
+                    <div id="exam-bank-selection-list" class="bank-select-list">
+                        <!-- Checkboxes of banks rendered here -->
+                    </div>
+                    <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">
+                        * Bạn có thể chọn 1 file cụ thể hoặc tick chọn nhiều file/toàn bộ để thi gộp kiến thức.
+                    </p>
+                </div>
+
+                <!-- 2. Chọn số lượng câu hỏi -->
+                <div class="setup-section">
+                    <label class="setup-section-title">
+                        <i class="fa-solid fa-list-ol" style="color: var(--primary);"></i>
+                        2. Số lượng câu hỏi thi:
+                    </label>
+                    <div class="setup-grid">
+                        <div class="setup-option-card selected" data-qcount="all">
+                            <div style="font-size: 18px; font-weight: 800;">Toàn bộ câu</div>
+                            <div style="font-size: 12px; color: var(--text-muted);" id="setup-total-q-label">157 câu</div>
+                        </div>
+                        <div class="setup-option-card" data-qcount="20">
+                            <div style="font-size: 18px; font-weight: 800;">20 câu</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Khởi động nhanh</div>
+                        </div>
+                        <div class="setup-option-card" data-qcount="40">
+                            <div style="font-size: 18px; font-weight: 800;">40 câu</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Đề thi tiêu chuẩn</div>
+                        </div>
+                        <div class="setup-option-card" data-qcount="50">
+                            <div style="font-size: 18px; font-weight: 800;">50 câu</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Luyện đề sâu</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Thời gian làm bài -->
+                <div class="setup-section">
+                    <label class="setup-section-title">
+                        <i class="fa-solid fa-clock" style="color: var(--primary);"></i>
+                        3. Thời gian làm bài:
+                    </label>
+                    <div class="setup-grid">
+                        <div class="setup-option-card" data-time="0">
+                            <div style="font-size: 16px; font-weight: 700;">Không giới hạn</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Thoải mái làm</div>
+                        </div>
+                        <div class="setup-option-card selected" data-time="30">
+                            <div style="font-size: 16px; font-weight: 700;">30 Phút</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Tốc độ chuẩn</div>
+                        </div>
+                        <div class="setup-option-card" data-time="45">
+                            <div style="font-size: 16px; font-weight: 700;">45 Phút</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Tiêu chuẩn thi</div>
+                        </div>
+                        <div class="setup-option-card" data-time="60">
+                            <div style="font-size: 16px; font-weight: 700;">60 Phút</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Đề dài & khó</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Tùy chọn xáo trộn -->
+                <div class="setup-section">
+                    <label class="setup-section-title">
+                        <i class="fa-solid fa-sliders" style="color: var(--primary);"></i>
+                        4. Tùy chọn xáo trộn:
+                    </label>
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
+                            <input type="checkbox" id="exam-opt-shuffle-q" class="custom-checkbox" checked>
+                            <span>Xáo trộn thứ tự các câu hỏi</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
+                            <input type="checkbox" id="exam-opt-shuffle-ans" class="custom-checkbox">
+                            <span>Xáo trộn thứ tự các đáp án (A, B, C, D)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button id="btn-start-exam-now" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 16px;">
+                    <i class="fa-solid fa-play"></i>
+                    <span>BẮT ĐẦU LÀM BÀI THI</span>
+                </button>
+            </div>
+
+            <!-- State 2: Đang thi thử (Active Exam Screen) -->
+            <div id="exam-active-container" style="display: none;">
+                <!-- Header sticky với đồng hồ và nút nộp bài -->
+                <div class="exam-active-header">
+                    <div>
+                        <h3 id="exam-active-title" style="font-size: 17px; font-weight: 700;">Bài Thi Trắc Nghiệm</h3>
+                        <p id="exam-active-subtitle" style="font-size: 13px; color: var(--text-muted);">Đang thực hiện bài thi</p>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div class="exam-timer" id="exam-timer-display">
+                            <i class="fa-solid fa-stopwatch"></i>
+                            <span id="exam-timer-digits">30:00</span>
+                        </div>
+                        <button id="btn-submit-exam" class="btn btn-success">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Nộp Bài Thi</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Layout 2 cột: Cột câu hỏi & Cột bản đồ câu hỏi -->
+                <div class="exam-layout">
+                    <!-- Main Question Panel -->
+                    <div class="exam-main-panel">
+                        <div class="exam-question-number">
+                            <span id="exam-current-index-label">CÂU HỎI 1 / 157</span>
+                            <button id="btn-flag-current" class="btn-flag">
+                                <i class="fa-solid fa-flag"></i>
+                                <span>Đánh dấu xem lại</span>
+                            </button>
+                        </div>
+
+                        <div class="exam-question-body" id="exam-question-text">
+                            <!-- Question text rendered here -->
+                        </div>
+
+                        <div class="exam-options-group" id="exam-options-container">
+                            <!-- Option choices rendered here -->
+                        </div>
+
+                        <div class="exam-nav-buttons">
+                            <button id="btn-exam-prev" class="btn btn-secondary">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <span>Câu trước</span>
+                            </button>
+                            <span id="exam-answered-stat" style="font-size: 14px; color: var(--text-secondary); font-weight: 600;">
+                                Đã trả lời: 0 / 157
+                            </span>
+                            <button id="btn-exam-next" class="btn btn-primary">
+                                <span>Câu tiếp theo</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Grid Navigator -->
+                    <div class="exam-sidebar">
+                        <div class="exam-sidebar-title">
+                            <span>Danh Sách Câu Hỏi</span>
+                            <span id="exam-sidebar-progress" style="font-size: 12px; color: var(--primary);">0%</span>
+                        </div>
+
+                        <div class="legend-group">
+                            <div class="legend-item">
+                                <div class="legend-dot answered"></div>
+                                <span>Đã chọn</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-dot flagged"></div>
+                                <span>Xem lại</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-dot unanswered"></div>
+                                <span>Chưa làm</span>
+                            </div>
+                        </div>
+
+                        <!-- Grid 1..N questions -->
+                        <div class="question-grid" id="exam-question-grid">
+                            <!-- Cells rendered here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- State 3: Bảng kết quả sau khi thi xong -->
+            <div id="exam-result-container" class="result-container" style="display: none;">
+                <div class="result-card-banner">
+                    <div class="result-score-badge">
+                        <div class="result-score-num" id="res-score-num">9.5</div>
+                        <div class="result-score-max">/ 10 ĐIỂM</div>
+                    </div>
+
+                    <h2 class="result-title" id="res-title-text">Xuất Sắc! Bạn Đã Hoàn Thành</h2>
+                    <p style="color: var(--text-secondary); font-size: 15px;" id="res-comment-text">Kết quả làm bài rất tốt, hãy duy trì phong độ này nhé!</p>
+
+                    <div class="result-summary-grid">
+                        <div class="result-stat-box">
+                            <div class="result-stat-num correct" id="res-correct-count">150</div>
+                            <div class="result-stat-label">Số câu đúng</div>
+                        </div>
+                        <div class="result-stat-box">
+                            <div class="result-stat-num wrong" id="res-wrong-count">7</div>
+                            <div class="result-stat-label">Số câu sai</div>
+                        </div>
+                        <div class="result-stat-box">
+                            <div class="result-stat-num time" id="res-time-taken">18:42</div>
+                            <div class="result-stat-label">Thời gian làm</div>
+                        </div>
+                        <div class="result-stat-box">
+                            <div class="result-stat-num" style="color: var(--primary);" id="res-accuracy">95.5%</div>
+                            <div class="result-stat-label">Tỉ lệ chính xác</div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: center; gap: 14px; margin-top: 30px; flex-wrap: wrap;">
+                        <button id="btn-retake-all" class="btn btn-primary">
+                            <i class="fa-solid fa-rotate-right"></i>
+                            <span>Thi Lại Đề Này</span>
+                        </button>
+                        <button id="btn-retake-wrong" class="btn btn-secondary">
+                            <i class="fa-solid fa-triangle-exclamation" style="color: var(--danger);"></i>
+                            <span>Chỉ Thi Lại Các Câu Sai</span>
+                        </button>
+                        <button id="btn-back-setup" class="btn btn-secondary">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Cấu Hình Đề Khác</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Review all questions -->
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <i class="fa-solid fa-list-check" style="color: var(--primary);"></i>
+                        Xem Chi Tiết Bài Làm
+                    </h3>
+                    <div class="study-filters">
+                        <button class="filter-btn active" id="btn-filter-res-all">Tất cả câu</button>
+                        <button class="filter-btn" id="btn-filter-res-wrong">Chỉ câu sai (<span id="res-wrong-filter-count">0</span>)</button>
+                    </div>
+                </div>
+
+                <div id="exam-review-list">
+                    <!-- Review questions rendered here -->
+                </div>
+            </div>
+        </main>
+
+        <!-- ============================================================== -->
+        <!-- TAB 4: LỊCH SỬ ĐIỂM SỐ                                         -->
+        <!-- ============================================================== -->
+        <main id="tab-history" class="tab-content">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-clock-rotate-left" style="color: var(--primary);"></i>
+                        Lịch Sử Thi & Thống Kê Điểm
+                    </h2>
+                    <p class="section-subtitle">Theo dõi sự tiến bộ và điểm số qua từng lượt làm bài thi</p>
+                </div>
+                <button id="btn-clear-history" class="btn btn-outline-danger">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <span>Xóa Lịch Sử</span>
+                </button>
+            </div>
+
+            <div id="history-container">
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Thời Gian</th>
+                            <th>Tên Đề Thi</th>
+                            <th>Số Câu Đúng</th>
+                            <th>Điểm Số</th>
+                            <th>Thời Gian Làm</th>
+                            <th>Thao Tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-table-body">
+                        <!-- History rows rendered here -->
+                    </tbody>
+                </table>
+                <div id="history-empty" class="empty-state" style="display: none; padding: 40px 20px;">
+                    <i class="fa-solid fa-receipt" style="font-size: 40px; color: var(--text-muted); margin-bottom: 12px;"></i>
+                    <p>Chưa có lượt thi nào được ghi lại. Hãy vào mục "Phòng Thi Thử" để làm bài!</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- MODAL: THÊM ĐỀ CƯƠNG MỚI (UPLOAD FILE / DÁN VĂN BẢN)           -->
+    <!-- ============================================================== -->
+    <div class="modal-overlay" id="modal-import">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fa-solid fa-file-circle-plus" style="color: var(--primary); margin-right: 8px;"></i>
+                    Thêm Bộ Đề Cương Trắc Nghiệm Mới
+                </div>
+                <button class="btn btn-icon" id="btn-close-import-modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">Tên bộ đề thi / đề cương:</label>
+                    <input type="text" id="import-bank-title" class="form-input" placeholder="Ví dụ: Đề cương Tin Học Đại Cương 157 câu">
+                </div>
+
+                <!-- Tabs: Upload File vs Paste Text -->
+                <div class="study-filters" style="margin-bottom: 16px;">
+                    <button class="filter-btn active" id="tab-import-file">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Tải file (.doc, .docx, .txt, .xlsx, .csv, .json)</span>
+                    </button>
+                    <button class="filter-btn" id="tab-import-text">
+                        <i class="fa-solid fa-paste"></i>
+                        <span>Dán trực tiếp văn bản đề thi</span>
+                    </button>
+                </div>
+
+                <!-- File Dropzone -->
+                <div id="panel-import-file">
+                    <div class="dropzone" id="file-dropzone">
+                        <div class="dropzone-icon">
+                            <i class="fa-solid fa-file-arrow-up"></i>
+                        </div>
+                        <h4>Kéo thả file vào đây hoặc bấm để chọn file</h4>
+                        <p>Hỗ trợ đầy đủ: Word (.doc, .docx), Văn bản (.txt), Excel (.xlsx, .csv), Backup (.json)</p>
+                        <input type="file" id="file-input-upload" class="file-input-hidden" accept=".doc,.docx,.txt,.xlsx,.csv,.json">
+                    </div>
+                </div>
+
+                <!-- Paste Text Area -->
+                <div id="panel-import-text" style="display: none;">
+                    <div class="form-group">
+                        <label class="form-label">Nội dung câu hỏi đề cương (hỗ trợ định dạng Câu 1: A. B. C. D. Đáp án: A):</label>
+                        <textarea id="import-textarea-content" class="form-textarea" rows="8" placeholder="Dán nội dung đề cương tại đây...
+Ví dụ:
+Câu 1: Thủ đô của Việt Nam là gì?
+A. Hà Nội
+B. Đà Nẵng
+C. TP Hồ Chí Minh
+D. Cần Thơ
+Đáp án: A
+
+Câu 2: HTML viết tắt của từ gì?
+*A. HyperText Markup Language
+B. HighText Machine Language
+C. HyperText Markdown Language
+D. Không đáp án nào đúng"></textarea>
+                    </div>
+                    <button id="btn-parse-text-now" class="btn btn-secondary" style="margin-bottom: 16px;">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>Phân tích văn bản</span>
+                    </button>
+                </div>
+
+                <!-- Live Preview Section (Ensures 100% full content preserved) -->
+                <div id="import-preview-container" style="display: none;">
+                    <div class="preview-summary">
+                        <div>
+                            <i class="fa-solid fa-circle-check" style="color: var(--success); margin-right: 6px;"></i>
+                            <span>Đã tìm thấy <strong id="preview-q-count" style="color: var(--primary);">0</strong> câu hỏi hợp lệ!</span>
+                        </div>
+                        <span id="preview-q-warning" style="font-size: 13px; color: var(--warning); display: none;">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Có câu chưa nhận diện được đáp án
+                        </span>
+                    </div>
+
+                    <label class="form-label" style="font-size: 13px;">Xem trước các câu hỏi được phân tích (đảm bảo đầy đủ nội dung):</label>
+                    <div class="preview-list" id="import-preview-list">
+                        <!-- Preview questions rendered here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btn-cancel-import">Hủy bỏ</button>
+                <button class="btn btn-primary" id="btn-save-bank-confirm" disabled>
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    <span>Lưu Vào Thư Viện</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- MODAL: XEM & CHỈNH SỬA BỘ ĐỀ (INSPECT & EDIT BANK)             -->
+    <!-- ============================================================== -->
+    <div class="modal-overlay" id="modal-edit-bank">
+        <div class="modal-box" style="max-width: 900px;">
+            <div class="modal-header">
+                <div class="modal-title" id="edit-bank-modal-title">
+                    <i class="fa-solid fa-pen-to-square" style="color: var(--primary); margin-right: 8px;"></i>
+                    Chi Tiết Danh Sách Câu Hỏi
+                </div>
+                <button class="btn btn-icon" id="btn-close-edit-bank-modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                    <span id="edit-bank-total-info" style="font-weight: 700; color: var(--text-primary);">Tổng: 157 câu</span>
+                    <button id="btn-add-new-question-to-bank" class="btn btn-secondary" style="font-size: 13px;">
+                        <i class="fa-solid fa-plus"></i> Thêm câu hỏi thủ công
+                    </button>
+                </div>
+                <div id="edit-bank-questions-list" style="max-height: 480px; overflow-y: auto; padding-right: 6px;">
+                    <!-- List of questions with editable fields -->
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btn-close-edit-bank">Đóng</button>
+                <button class="btn btn-primary" id="btn-save-edited-bank">
+                    <i class="fa-solid fa-check"></i> Lưu thay đổi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- MODAL: XÁC NHẬN NỘP BÀI THI                                    -->
+    <!-- ============================================================== -->
+    <div class="modal-overlay" id="modal-submit-confirm">
+        <div class="modal-box" style="max-width: 480px;">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fa-solid fa-circle-question" style="color: var(--warning); margin-right: 8px;"></i>
+                    Xác Nhận Nộp Bài Thi
+                </div>
+            </div>
+            <div class="modal-body">
+                <p style="font-size: 15px; margin-bottom: 14px;">Bạn có chắc chắn muốn nộp bài thi ngay bây giờ?</p>
+                <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px; font-size: 14px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                        <span>Đã làm:</span>
+                        <strong id="confirm-answered-count" style="color: var(--success);">0</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Chưa làm:</span>
+                        <strong id="confirm-unanswered-count" style="color: var(--danger);">0</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btn-cancel-submit-confirm">Tiếp tục làm bài</button>
+                <button class="btn btn-success" id="btn-final-submit-confirm">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Nộp Bài Ngay</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- External CDN Libraries -->
+    <!-- Mammoth.js for Word .docx extraction -->
+    <script src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script>
+    <!-- SheetJS for Excel .xlsx / .csv -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <!-- Canvas Confetti for Exam Celebration -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <!-- Application Logic -->
+    <script src="parser.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
