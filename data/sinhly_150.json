@@ -1,0 +1,3766 @@
+{
+  "id": "bank_sinhly_150",
+  "title": "7. Đề cương Sinh lý bệnh – Miễn dịch",
+  "createdAt": "2026-10-22T20:25:00.000Z",
+  "tags": [
+    "Y Dược",
+    "Sinh Lý Bệnh",
+    "Miễn Dịch"
+  ],
+  "questions": [
+    {
+      "id": "q_sinhly_1",
+      "index": 1,
+      "question": "Định nghĩa bệnh nguyên",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yếu tố quyết định tính đặc trưng của bệnh"
+        },
+        {
+          "key": "B",
+          "text": "Yếu tố chủ yếu làm bệnh phát sinh"
+        },
+        {
+          "key": "C",
+          "text": "Yếu tố quyết định sự diễn biến của bệnh"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_2",
+      "index": 2,
+      "question": "Nguyên nhân gây bệnh",
+      "options": [
+        {
+          "key": "A",
+          "text": "Quyết định gây ra bệnh"
+        },
+        {
+          "key": "B",
+          "text": "Quyết định tính đặc trưng của bệnh"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Quyết định sự diễn biến của bệnh"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_3",
+      "index": 3,
+      "question": "Yếu tố xã hội",
+      "options": [
+        {
+          "key": "A",
+          "text": "Là một nguyên nhân gây bệnh"
+        },
+        {
+          "key": "B",
+          "text": "Là yếu tố làm thay đổi vai trò của nguyên nhân gây bệnh"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Không ảnh hưởng đến bệnh nguyên"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_4",
+      "index": 4,
+      "question": "Thể tạng",
+      "options": [
+        {
+          "key": "A",
+          "text": "Làm thay đổi tính đặc trưng của bệnh"
+        },
+        {
+          "key": "B",
+          "text": "Làm bệnh khó phát sinh"
+        },
+        {
+          "key": "C",
+          "text": "Làm bệnh dễ phát sinh"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_5",
+      "index": 5,
+      "question": "Bệnh di truyền",
+      "options": [
+        {
+          "key": "A",
+          "text": "Không có nguyên nhân"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Do sai sót của ARN"
+        },
+        {
+          "key": "D",
+          "text": "Do rối loạn cấu trúc của ty thể"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_6",
+      "index": 6,
+      "question": "Nguyên nhân gây bệnh chính hiện nay đối với nước ta",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yếu tố cơ học"
+        },
+        {
+          "key": "B",
+          "text": "Yếu tố vật lý"
+        },
+        {
+          "key": "C",
+          "text": "Yếu tố hóa học"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_7",
+      "index": 7,
+      "question": "Glucose máu bình thường khoảng:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "2 g/lít"
+        },
+        {
+          "key": "C",
+          "text": "3 g/lít"
+        },
+        {
+          "key": "D",
+          "text": "4 g/lít."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_8",
+      "index": 8,
+      "question": "Gan cung cấp glucose cho máu chủ yếu bằng cách",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tân tạo glucose từ protid"
+        },
+        {
+          "key": "C",
+          "text": "Tân tạo glucose từ acid béo"
+        },
+        {
+          "key": "D",
+          "text": "Tạo Glucose từ acid lactic"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_9",
+      "index": 9,
+      "question": "Triệu chứng xuất hiện sớm nhất và thường gặp khi glucose máu giảm nhẹ",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mất thăng bằng, chóng mặt"
+        },
+        {
+          "key": "B",
+          "text": "Cồn cào(dạ dày, ruột tăng co bóp)"
+        },
+        {
+          "key": "C",
+          "text": "Tim đập nhanh, rối loạn nhịp tim"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_10",
+      "index": 10,
+      "question": "Nguồn cung cấp glucose chủ yếu hàng ngày:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Thịt heo"
+        },
+        {
+          "key": "C",
+          "text": "Đường"
+        },
+        {
+          "key": "D",
+          "text": "Cá."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_11",
+      "index": 11,
+      "question": "Thực phẩm cung cấp glucid cho cơ thể:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Thịt heo"
+        },
+        {
+          "key": "C",
+          "text": "Đường"
+        },
+        {
+          "key": "D",
+          "text": "Cá."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_12",
+      "index": 12,
+      "question": "Lòng trắng trứng chủ yếu cung cấp thành phần nào cho cơ thể:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Lipid"
+        },
+        {
+          "key": "C",
+          "text": "Glucid"
+        },
+        {
+          "key": "D",
+          "text": "Vitamin."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_13",
+      "index": 13,
+      "question": "Sinh glucose mới từ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lách hủy Glycogen thành glucose"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Thận tăng tái hấp thu glucose"
+        },
+        {
+          "key": "D",
+          "text": "Tủy xương tăng tạo glucose"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_14",
+      "index": 14,
+      "question": "Khi lượng glucose trong máu giảm, cơ thể sẽ điều chỉnh bằng cách:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lách hủy Glycogen thành glucose"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Thận tăng tái hấp thu glucose"
+        },
+        {
+          "key": "D",
+          "text": "Tủy xương tăng tạo glucose"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_15",
+      "index": 15,
+      "question": "Hệ làm giảm glucose máu:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Insulin do gan tiết ra"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Glucagon tiết từ tụy"
+        },
+        {
+          "key": "D",
+          "text": "Mật do gan tiết ra"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_16",
+      "index": 16,
+      "question": "Insulin có tác dụng:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Làm giảm tạo glycogen ở gan"
+        },
+        {
+          "key": "C",
+          "text": "Giảm tạo lipid từ glucid"
+        },
+        {
+          "key": "D",
+          "text": "Kích thích hủy glycogen thành glucose"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_17",
+      "index": 17,
+      "question": "Glucagon có tác dụng:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Giảm đường huyết"
+        },
+        {
+          "key": "B",
+          "text": "Tăng mỡ máu"
+        },
+        {
+          "key": "C",
+          "text": "Ổn định nồng độ caxi"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_18",
+      "index": 18,
+      "question": "Tác dụng chính của Glucagon:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Giảm đường huyết"
+        },
+        {
+          "key": "B",
+          "text": "Kích thích hệ giao cảm"
+        },
+        {
+          "key": "C",
+          "text": "Ổn định huyết áp"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_19",
+      "index": 19,
+      "question": "Glucagon được tiết ra từ cơ quan nào:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gan"
+        },
+        {
+          "key": "B",
+          "text": "Thận"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Lách"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_20",
+      "index": 20,
+      "question": "Các hormon do tuỵ tiết ra:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Thyrocin"
+        },
+        {
+          "key": "C",
+          "text": "Adrenalin"
+        },
+        {
+          "key": "D",
+          "text": "ADH"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_21",
+      "index": 21,
+      "question": "Các hormon do tuỵ tiết ra:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Insulin, ADH"
+        },
+        {
+          "key": "B",
+          "text": "Thyrocin, Pepsin"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "ADH, Progesteron"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_22",
+      "index": 22,
+      "question": "Adrenalin được tiết ra từ tuyến nội tiết nào:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tuyến yên"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Tuyến tuỵ"
+        },
+        {
+          "key": "D",
+          "text": "Tuyến giáp"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_23",
+      "index": 23,
+      "question": "Adrenalin có tác dụng:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Co thắt khí quản"
+        },
+        {
+          "key": "C",
+          "text": "Giảm mỡ máu"
+        },
+        {
+          "key": "D",
+          "text": "Ức chế thần kinh giao cảm"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_24",
+      "index": 24,
+      "question": "Giảm glucose trong máu khi:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Giảm tiết glucose từ gian bào"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Ứ đọng glycogen ở cơ"
+        },
+        {
+          "key": "D",
+          "text": "Bệnh nhân béo phì"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_25",
+      "index": 25,
+      "question": "Giảm glucose trong máu do:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Do giảm men tổng hợp glycogen tế bào bêta của tuyến tụy."
+        },
+        {
+          "key": "C",
+          "text": "Do mất qua đường mật"
+        },
+        {
+          "key": "D",
+          "text": "Thiếu Insulin tương đối"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_26",
+      "index": 26,
+      "question": "Giai đoạn đầu giảm glucose máu sẽ phát sinh cảm giác đói do:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Insulin tăng"
+        },
+        {
+          "key": "C",
+          "text": "Glucagon giảm"
+        },
+        {
+          "key": "D",
+          "text": "Adrenalin giảm"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_27",
+      "index": 27,
+      "question": "Bệnh sinh của đái đường type I do di truyền, môi trường, và:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Nhiễm khuẩn"
+        },
+        {
+          "key": "C",
+          "text": "Nhiễm siêu vi khuẩn"
+        },
+        {
+          "key": "D",
+          "text": "Nhiễm độc"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_28",
+      "index": 28,
+      "question": "Insulin thiếu tương đối là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lượng insulin thiếu ít"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Lượng insulin thiếu nhiều"
+        },
+        {
+          "key": "D",
+          "text": "Lượng insulin không ổn định"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_29",
+      "index": 29,
+      "question": "Cơ chế của biến chứng  dây thần kinh thứ phát trong đái tháo đường:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Trong các tế bào Schwann của các dây thần kinh thấy có sự tích lũy của các acide"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Trong các tế bào của các dây thần kinh có sự tích lũy của các thể keton"
+        },
+        {
+          "key": "D",
+          "text": "Trong các tế bào của các dây thần kinh có sự tích lũy của các tế bào mỡ"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_30",
+      "index": 30,
+      "question": "Cơ chế của nhiễm trùng trong đái tháo đường:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Do thừa năng lượng,"
+        },
+        {
+          "key": "C",
+          "text": "Do môi trường đường máu giảm"
+        },
+        {
+          "key": "D",
+          "text": "Do nhiễm keton"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_31",
+      "index": 31,
+      "question": "Cơ chế của Hôn mê của bệnh đái tháo đường:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Do aceton là các acid mạnh nên làm giảm pH máu"
+        },
+        {
+          "key": "C",
+          "text": "Do tình trạng giảm glucose máu lúc đầu làm tăng áp lực thẩm thấu ngoại bào"
+        },
+        {
+          "key": "D",
+          "text": "Do tăng nồng độ glucose máu nên gây thiểu niệu thẩm thấu"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_32",
+      "index": 32,
+      "question": "Glucose được thải qua thận khi glucose máu vượt quá ngưỡng thận là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.8 g/lít"
+        },
+        {
+          "key": "B",
+          "text": "1.2 g/lít"
+        },
+        {
+          "key": "C",
+          "text": "1.6 g/lít."
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_33",
+      "index": 33,
+      "question": "Insulin có tác dụng làm tăng sử dụng glucose bằng cách là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Làm giảm tạo glycogen ở gan"
+        },
+        {
+          "key": "C",
+          "text": "Giảm tạo lipid từ glucid."
+        },
+        {
+          "key": "D",
+          "text": "Kích thích hủy glycogen thành glucose."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_34",
+      "index": 34,
+      "question": "Insulin có tác dụng làm giảm cung cấp glucose bằng cách là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Ức chế sự sinh đường mới từ protid, lipid."
+        },
+        {
+          "key": "C",
+          "text": "Giảm tạo lipid từ glucid."
+        },
+        {
+          "key": "D",
+          "text": "Kích thích hủy glycogen thành glucose."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_35",
+      "index": 35,
+      "question": "Insulin được tiết ra từ:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Vỏ tuyến thượng thận."
+        },
+        {
+          "key": "C",
+          "text": "Đoạn D2 của tá tràng."
+        },
+        {
+          "key": "D",
+          "text": "Ty thể của tế bào gan."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_36",
+      "index": 36,
+      "question": "Hệ làm tăng glucose máu là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Mật, glucagon, dịch vị"
+        },
+        {
+          "key": "C",
+          "text": "Insulin, ACTH, dịch mật"
+        },
+        {
+          "key": "D",
+          "text": "Lipase, ACTH, STH."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_37",
+      "index": 37,
+      "question": "Hệ làm tăng glucose máu là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Insulin, glucagon, Lipase"
+        },
+        {
+          "key": "C",
+          "text": "Insulin, ACTH, dịch mật"
+        },
+        {
+          "key": "D",
+          "text": "Lipase, dịch mật, STH."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_38",
+      "index": 38,
+      "question": "Giảm glucose vào máu do:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tăng tiết glucose từ gan vào máu"
+        },
+        {
+          "key": "C",
+          "text": "Các bệnh gây ứ đọng glycogen ở cơ"
+        },
+        {
+          "key": "D",
+          "text": "Do quá trình tân tạo glucose ở gan bị hạn chế"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_39",
+      "index": 39,
+      "question": "Giảm glucose vào máu do:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Giảm quá trình oxy hóa trong tế bào"
+        },
+        {
+          "key": "C",
+          "text": "Do mất qua đường mật"
+        },
+        {
+          "key": "D",
+          "text": "Thiếu Insulin tương đối."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_40",
+      "index": 40,
+      "question": "Giảm glucose máu khi nồng độ glucose trong máu dưới:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "1.8 g/l"
+        },
+        {
+          "key": "C",
+          "text": "2.8 g/l"
+        },
+        {
+          "key": "D",
+          "text": "3.8 g/l"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_41",
+      "index": 41,
+      "question": "Tăng glucose máu khi nồng độ glucose trong máu:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Dưới 0.8 g/l"
+        },
+        {
+          "key": "C",
+          "text": "Dưới 1.2 g/l"
+        },
+        {
+          "key": "D",
+          "text": "Trên 0.8 g/l"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_42",
+      "index": 42,
+      "question": "Bệnh sinh của đái đường type I do di truyền, môi trường, và:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Nhiễm khuẩn"
+        },
+        {
+          "key": "C",
+          "text": "Nhiễm siêu vi khuẩn"
+        },
+        {
+          "key": "D",
+          "text": "Nhiễm độc."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_43",
+      "index": 43,
+      "question": "Khi Glucose trong máu cao thì phần lớn sẽ chuyển đến:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Thận"
+        },
+        {
+          "key": "C",
+          "text": "Lách"
+        },
+        {
+          "key": "D",
+          "text": "Tụy"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_44",
+      "index": 44,
+      "question": "Khi cơ thể thiếu Glucose trong máu sẽ tân sinh từ:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Glycogen, PG"
+        },
+        {
+          "key": "C",
+          "text": "PG, Fructose"
+        },
+        {
+          "key": "D",
+          "text": "Pentose, PG"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_45",
+      "index": 45,
+      "question": "Khi cơ thể thiếu Glucose trong máu sẽ lấy từ:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Glycogen tại thận"
+        },
+        {
+          "key": "C",
+          "text": "Glycogen tại tụy"
+        },
+        {
+          "key": "D",
+          "text": "Acid lactic tại ruột non"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_46",
+      "index": 46,
+      "question": "Khi cơ thể thiếu Glucose trong máu sẽ thích nghi bằng:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tim nhanh"
+        },
+        {
+          "key": "C",
+          "text": "Huyết áp tăng"
+        },
+        {
+          "key": "D",
+          "text": "Huyết áp hạ"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_47",
+      "index": 47,
+      "question": "Khi nồng độ Glucose trong máu tăng:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tuỵ giảm tiết Insulin"
+        },
+        {
+          "key": "C",
+          "text": "Nồng độ glucagon tăng"
+        },
+        {
+          "key": "D",
+          "text": "Huyết áp hạ"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_48",
+      "index": 48,
+      "question": "Khi cơ thể thừa Glucose trong máu (&gt;180mg%) sẽ:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Giảm Insulin"
+        },
+        {
+          "key": "C",
+          "text": "Thải ra ngoài theo phân, mồ hôi"
+        },
+        {
+          "key": "D",
+          "text": "Huyết áp hạ"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_49",
+      "index": 49,
+      "question": "Hệ làm tăng glucose trong máu là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Insulin tuyến thượng thận tiết ra"
+        },
+        {
+          "key": "C",
+          "text": "ACTH do tuyến tụy tiết ra"
+        },
+        {
+          "key": "D",
+          "text": "Glucagon do tuyến yên tiết ra"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_50",
+      "index": 50,
+      "question": "Khi cơ thể giảm Glucose trong máu, insulinase sẽ:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tăng Insulin"
+        },
+        {
+          "key": "C",
+          "text": "Tăng ACTH"
+        },
+        {
+          "key": "D",
+          "text": "Tăng glucagon"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_51",
+      "index": 51,
+      "question": "Giảm tiết glucose từ gan vào máu. Gặp trong các trường hợp:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tăng Insulin"
+        },
+        {
+          "key": "C",
+          "text": "Tăng men giáng hóa glycogen"
+        },
+        {
+          "key": "D",
+          "text": "Tăng glucagon"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_52",
+      "index": 52,
+      "question": "Giảm glucose trong  máu. Gặp trong các trường hợp:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Ít họat động"
+        },
+        {
+          "key": "C",
+          "text": "Suy tụy 🡪 Giảm insulin"
+        },
+        {
+          "key": "D",
+          "text": "Tăng glucagon"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_53",
+      "index": 53,
+      "question": "Giảm glucose trong  máu.  Gặp trong các trường hợp:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Cường vỏ thượng thận"
+        },
+        {
+          "key": "C",
+          "text": "Suy tụy 🡪 Giảm insulin"
+        },
+        {
+          "key": "D",
+          "text": "Tăng tế bào alpha của tụy do U"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_54",
+      "index": 54,
+      "question": "Cơ chế của các biểu hiện lâm sàng trong giảm glucose máu:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Ức chế hệ thống nội tiết bài tiết các hormon để gây tăng glucose máu"
+        },
+        {
+          "key": "C",
+          "text": "Tăng tiết insulin"
+        },
+        {
+          "key": "D",
+          "text": "Tế bào alpha của tụy giảm họat động"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_55",
+      "index": 55,
+      "question": "Glucose máu giảm sẽ làm tăng tiết các catecholamin gây:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Giãn mạch"
+        },
+        {
+          "key": "C",
+          "text": "Tim đập chậm"
+        },
+        {
+          "key": "D",
+          "text": "Huyết áp giảm"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_56",
+      "index": 56,
+      "question": "Glucose máu giảm sẽ làm tăng tiết các catecholamin gây:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Hoa mắt do co đồng tử"
+        },
+        {
+          "key": "C",
+          "text": "Hoa mắt do Tim đập chậm"
+        },
+        {
+          "key": "D",
+          "text": "Hoa mắt do huyết áp giảm"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_57",
+      "index": 57,
+      "question": "Gọi là bệnh đái tháo đường:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Khi glucose có trong nước tiểu"
+        },
+        {
+          "key": "C",
+          "text": "Khi glucose/ máu cao và glucose có trong nước tiểu"
+        },
+        {
+          "key": "D",
+          "text": "Khi glucose/máu cao và glucose có trong nước tiểu và có biểu hiện lâm sàng"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_58",
+      "index": 58,
+      "question": "Tình trạng thiếu insulin (tương đối hoặc tuyệt đối) sẽ làm cho:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tăng sử dụng glucose ngoại biên."
+        },
+        {
+          "key": "C",
+          "text": "Tăng tân sinh đường và giảm một cách đáng kể sự dị hóa nitơ."
+        },
+        {
+          "key": "D",
+          "text": "Giảm tiêu mỡ"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_59",
+      "index": 59,
+      "question": "Lipid:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Lipid được đốt để tạo glucose 🡪 năng lượng tại các tế bào"
+        },
+        {
+          "key": "C",
+          "text": "Lipid là nguồn năng lượng dự trữ lớn sau glucose"
+        },
+        {
+          "key": "D",
+          "text": "Cần cho sự tổng hợp dịch vị, các hormon steroid thượng thận và sinh dục"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_60",
+      "index": 60,
+      "question": "Lipid dạng nhũ tương thường được ruột hấp thu nhiều nhất",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acid béo"
+        },
+        {
+          "key": "B",
+          "text": "Monoglycerid"
+        },
+        {
+          "key": "C",
+          "text": "Diglycerid"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_61",
+      "index": 61,
+      "question": "Nội tiết tố có vai trò thoái hóa lipid mạnh mẽ nhất",
+      "options": [
+        {
+          "key": "A",
+          "text": "ACTH"
+        },
+        {
+          "key": "B",
+          "text": "Thyroxin"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Noradrenalin"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_62",
+      "index": 62,
+      "question": "Cơ thể tăng huy động dự trử mỡ thường gặp nhất",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Sốt"
+        },
+        {
+          "key": "C",
+          "text": "Đái đường"
+        },
+        {
+          "key": "D",
+          "text": "Basedow"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_63",
+      "index": 63,
+      "question": "Khi đói kéo dài, nơi bị sụt giảm lipid dự trử biểu hiện rõ và sớm nhất",
+      "options": [
+        {
+          "key": "A",
+          "text": "Thần kinh"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Tuyến sinh dục"
+        },
+        {
+          "key": "D",
+          "text": "Cơ trơn"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_64",
+      "index": 64,
+      "question": "Xét nghiệm tương đối có giá trị hơn cả trong dự đoán xơ vữa mạch",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lượng cholesterol toàn phần"
+        },
+        {
+          "key": "B",
+          "text": "Lượng lipid toàn phần"
+        },
+        {
+          "key": "C",
+          "text": "Lượng trigycerid"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_65",
+      "index": 65,
+      "question": "Cơ chế gây xơ vữa mạch của LDL",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tồn tại lâu trong máu"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "LDL chứa nhiều lipid hơn HDL"
+        },
+        {
+          "key": "D",
+          "text": "Khó bị oxy hóa"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_66",
+      "index": 66,
+      "question": "Hiện tượng xảy ra sớm thường gặp ở những người béo ph",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Nhiễm khuẩn"
+        },
+        {
+          "key": "C",
+          "text": "Xơ vữa động mạch"
+        },
+        {
+          "key": "D",
+          "text": "Loãng xương"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_67",
+      "index": 67,
+      "question": "Lipid:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Là nguồn năng lượng trực tiếp chiếm 70% năng lượng cơ thể."
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Mô mỡ chiếm khoảng 65-70% trọng lượng cơ thể ở người trưởng thành"
+        },
+        {
+          "key": "D",
+          "text": "Cần cho sự tổng hợp dịch vị, các hormon steroid thượng thận và sinh dục"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_68",
+      "index": 68,
+      "question": "Lipid:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Là nguồn năng lượng trực tiếp chiếm 70% năng lượng cơ thể."
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Khối lượng mỡ ở nam giới cao hơn nữ giới và giảm dần theo tuổi. Nếu cơ thể tích trữ quá nhiều lipid sẽ bị suy dinh dưỡng."
+        },
+        {
+          "key": "D",
+          "text": "Cần cho sự tổng hợp dịch vị, các hormon steroid thượng thận và dịch ruột."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_69",
+      "index": 69,
+      "question": "Công thức tính chỉ số khối (BMI) là bằng:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Chiều cao cơ thể chia cho bình phương trọng lượng cơ thể (cm/kg 2)"
+        },
+        {
+          "key": "C",
+          "text": "Trọng lượng cơ thể chia bình phương chiều cao cơ thể (g/m2)"
+        },
+        {
+          "key": "D",
+          "text": "Chiều cao cơ thể chia cho bình phương trọng lượng cơ thể (cm2/g)"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_70",
+      "index": 70,
+      "question": "Hai vấn đề lớn thường gặp trong rối loạn chuyển hóa lipid là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tình trạng béo phì và rối loạn glucose máu."
+        },
+        {
+          "key": "C",
+          "text": "Rối loạn nội tiết và rối loạn lipoprotein máu"
+        },
+        {
+          "key": "D",
+          "text": "Rối loạn glucose máu và rối loạn nội tiết"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_71",
+      "index": 71,
+      "question": "Chỉ số khối cơ thể (BMI) bình thường:",
+      "options": [
+        {
+          "key": "A",
+          "text": "dưới 18.5"
+        },
+        {
+          "key": "B",
+          "text": "25-27"
+        },
+        {
+          "key": "C",
+          "text": "25-30"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_72",
+      "index": 72,
+      "question": "Cơ chế béo phì:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Béo phì là hậu quả của sự gia tăng protide"
+        },
+        {
+          "key": "C",
+          "text": "Béo phì là hậu quả của sự gia tăng xương"
+        },
+        {
+          "key": "D",
+          "text": "Béo phì là hậu quả của sự gia tăng chất lỏng"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_73",
+      "index": 73,
+      "question": "Hậu quả của béo phì có thể gây:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Bệnh đái đường týp I"
+        },
+        {
+          "key": "C",
+          "text": "Hạ huyết áp do tăng LDL"
+        },
+        {
+          "key": "D",
+          "text": "Sỏi niệu"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_74",
+      "index": 74,
+      "question": "Hậu quả của béo phì có thể gây:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Bệnh đái đường týp I"
+        },
+        {
+          "key": "C",
+          "text": "Hạ huyết áp do tăng LDL"
+        },
+        {
+          "key": "D",
+          "text": "Sỏi niệu"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_75",
+      "index": 75,
+      "question": "Hậu quả của béo phì có thể gây:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Bệnh đái đường týp I"
+        },
+        {
+          "key": "C",
+          "text": "Hạ huyết áp do tăng LDL"
+        },
+        {
+          "key": "D",
+          "text": "Sỏi niệu"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_76",
+      "index": 76,
+      "question": "Hậu quả của béo phì có thể gây:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Bệnh đái đường týp I"
+        },
+        {
+          "key": "C",
+          "text": "Hạ huyết áp do tăng LDL"
+        },
+        {
+          "key": "D",
+          "text": "Sỏi niệu"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_77",
+      "index": 77,
+      "question": "Các chất gây tăng lipid máu:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Insulin"
+        },
+        {
+          "key": "C",
+          "text": "Glucagon"
+        },
+        {
+          "key": "D",
+          "text": "Pepsin"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_78",
+      "index": 78,
+      "question": "Tăng lipoprotein máu có nguy cơ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gây xơ vữa động mạch, từ đó tăng tính đàn hồi"
+        },
+        {
+          "key": "B",
+          "text": "Hạ huyết áp do tăng LDL"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Thiếu năng lượng"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_79",
+      "index": 79,
+      "question": "Tăng lipoprotein máu có nguy cơ, ngoại trừ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nhồi máu cơ tim."
+        },
+        {
+          "key": "B",
+          "text": "Bệnh lý động mạch vành"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Tăng huyết áp"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_80",
+      "index": 80,
+      "question": "Phân loại tăng lipoprotein máu của Frederickson/WHO:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Type I : LDL"
+        },
+        {
+          "key": "B",
+          "text": "Type II : IDL"
+        },
+        {
+          "key": "C",
+          "text": "Type III : LDL và VLDL"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_81",
+      "index": 81,
+      "question": "Ở người dưới 30 tuổi, Cholesterol máu lý tưởng là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "&lt;1,8 g/L"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "2-4 g/L"
+        },
+        {
+          "key": "D",
+          "text": "&gt; 4g/L"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_82",
+      "index": 82,
+      "question": "Tăng cholesterol máu týp IIa:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Do giảm thụ thể của HDL."
+        },
+        {
+          "key": "C",
+          "text": "Do tăng chuyển hóa của HDL"
+        },
+        {
+          "key": "D",
+          "text": "Do tăng Triglycerid"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_83",
+      "index": 83,
+      "question": "Triglycerid (TG):",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Khi trên 1.2g/L là bệnh lý."
+        },
+        {
+          "key": "C",
+          "text": "Tăng TG tương ứng với tăng HDL"
+        },
+        {
+          "key": "D",
+          "text": "Tăng TG có thể là tiên phát do thiếu HDL"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_84",
+      "index": 84,
+      "question": "Triglycerid (TG) có nhiều dưới dạng:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "HDL"
+        },
+        {
+          "key": "C",
+          "text": "LDL"
+        },
+        {
+          "key": "D",
+          "text": "IDL"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_85",
+      "index": 85,
+      "question": "Cholesteron có nhiều dưới dạng:",
+      "options": [
+        {
+          "key": "A",
+          "text": "VLDL"
+        },
+        {
+          "key": "B",
+          "text": "HDL"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "IDL"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_86",
+      "index": 86,
+      "question": "Hầu hết Lipoprotein tạo thành tại:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Thận"
+        },
+        {
+          "key": "B",
+          "text": "Phổi"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Tụy"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_87",
+      "index": 87,
+      "question": "Hormon làm tăng thoái hóa lipid:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "ADH"
+        },
+        {
+          "key": "C",
+          "text": "Aldosteron"
+        },
+        {
+          "key": "D",
+          "text": "Insulin"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_88",
+      "index": 88,
+      "question": "Hormon kích thích tổng hợp Triglyceride:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ACTH"
+        },
+        {
+          "key": "B",
+          "text": "ADH"
+        },
+        {
+          "key": "C",
+          "text": "Aldosteron"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_89",
+      "index": 89,
+      "question": "Gọi là gan nhiễm mỡ khi:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Hầu hết các trường hợp là do tăng tích trữ glucose."
+        },
+        {
+          "key": "C",
+          "text": "Do giảm tổng hợp triglycerid bên trong tế bào gan"
+        },
+        {
+          "key": "D",
+          "text": "Tăng vận chuyển triglycerid ra khỏi gan"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_90",
+      "index": 90,
+      "question": "Khi ăn 100 gram mỡ cho ta lượng lipid:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "100 gram"
+        },
+        {
+          "key": "C",
+          "text": "90 gram"
+        },
+        {
+          "key": "D",
+          "text": "80 gram"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_91",
+      "index": 91,
+      "question": "Lipid",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "1g lipid cung cấp 4,1 kcal"
+        },
+        {
+          "key": "C",
+          "text": "1g lipid cung cấp  8,1 kcal"
+        },
+        {
+          "key": "D",
+          "text": "1g lipid cung cấp  3,1 kcal"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_92",
+      "index": 92,
+      "question": "Triglycerid (TG) máu bình thường dưới:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "2,5 g/L"
+        },
+        {
+          "key": "C",
+          "text": "3,5 g/L"
+        },
+        {
+          "key": "D",
+          "text": "4,5 g/L"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_93",
+      "index": 93,
+      "question": "Gọi là gan nhiễm mỡ khi lượng mỡ trong gan:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Trên 18%"
+        },
+        {
+          "key": "C",
+          "text": "Trên 23%"
+        },
+        {
+          "key": "D",
+          "text": "Trên 33%"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_94",
+      "index": 94,
+      "question": "Nhu cầu về lượng protid ở người trưởng thành là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "0,6 g/kg cân nặng mỗi ngày"
+        },
+        {
+          "key": "C",
+          "text": "0,7 g/kg cân nặng mỗi ngày"
+        },
+        {
+          "key": "D",
+          "text": "0,9 g/kg cân nặng mỗi ngày"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_95",
+      "index": 95,
+      "question": "Nhu cầu về chất protid ở người trưởng thành là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Đủ 8 acid amin cần thiết"
+        },
+        {
+          "key": "C",
+          "text": "Đủ 7 acid amin cần thiết"
+        },
+        {
+          "key": "D",
+          "text": "Đủ 6 acid amin cần thiết"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_96",
+      "index": 96,
+      "question": "Protid thực vật thường thiếu acid amin là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Histidin, isoleucin, leucin"
+        },
+        {
+          "key": "C",
+          "text": "Threonin, tryptophan và valin"
+        },
+        {
+          "key": "D",
+          "text": "Methionin, phenylalanin, threonin"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_97",
+      "index": 97,
+      "question": "Protid trong huyết tương bình thường vào khoảng:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "60-80g/L"
+        },
+        {
+          "key": "C",
+          "text": "50-80g/L"
+        },
+        {
+          "key": "D",
+          "text": "40-80g/L"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_98",
+      "index": 98,
+      "question": "Albumin/huyết tương bình thường khoảng:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "30-50g/L"
+        },
+        {
+          "key": "C",
+          "text": "25-50g/L"
+        },
+        {
+          "key": "D",
+          "text": "20-50g/L"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_99",
+      "index": 99,
+      "question": "Globulin/huyết tương bình thường khoảng:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "20-40g/L"
+        },
+        {
+          "key": "C",
+          "text": "30-50g/L"
+        },
+        {
+          "key": "D",
+          "text": "40-60g/L"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_100",
+      "index": 100,
+      "question": "Nguồn gốc chủ yếu của protid huyết tương:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Do tủy xương sản xuất"
+        },
+        {
+          "key": "C",
+          "text": "Do Lách sản xuất"
+        },
+        {
+          "key": "D",
+          "text": "Do tụy sản xuất"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_101",
+      "index": 101,
+      "question": "Vai trò của protid huyết tương:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tạo áp lực Kiềm toan"
+        },
+        {
+          "key": "C",
+          "text": "Tạo áp lực thủy tĩnh"
+        },
+        {
+          "key": "D",
+          "text": "Tạo áp lực thẩm thấu"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_102",
+      "index": 102,
+      "question": "Vai trò của protid huyết tương:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Điều hòa cân bằng oxy"
+        },
+        {
+          "key": "C",
+          "text": "Điều hòa miễn dịch"
+        },
+        {
+          "key": "D",
+          "text": "Điều hòa hô hấp"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_103",
+      "index": 103,
+      "question": "Vai trò của protid huyết tương, ngoại trừ:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tham gia bảo bệ cơ thể chống nhiễm trùng"
+        },
+        {
+          "key": "C",
+          "text": "Tham gia điều hòa cân bằng acid bazơ"
+        },
+        {
+          "key": "D",
+          "text": "Tham gia cơ chế đông máu"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_104",
+      "index": 104,
+      "question": "Protid thực vật thường thiếu acid amin:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Valin"
+        },
+        {
+          "key": "C",
+          "text": "Tyrosin"
+        },
+        {
+          "key": "D",
+          "text": "Histidin"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_105",
+      "index": 105,
+      "question": "Protid thực vật thường thiếu acid amin:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Valin"
+        },
+        {
+          "key": "C",
+          "text": "Threonin"
+        },
+        {
+          "key": "D",
+          "text": "Phenylalanin"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_106",
+      "index": 106,
+      "question": "Protid thực vật thường thiếu acid amin:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Isoleucin"
+        },
+        {
+          "key": "C",
+          "text": "Leucin"
+        },
+        {
+          "key": "D",
+          "text": "Arginin"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_107",
+      "index": 107,
+      "question": "Nguyên nhân gây giảm protid huyết tương, có thể gặp trong:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tăng huyết áp"
+        },
+        {
+          "key": "C",
+          "text": "Đái tháo đường"
+        },
+        {
+          "key": "D",
+          "text": "Hen phế quản"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_108",
+      "index": 108,
+      "question": "Nguyên nhân gây giảm protid huyết tương, có thể gặp trong, ngoại trừ:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Xơ gan"
+        },
+        {
+          "key": "C",
+          "text": "Viêm tụy mạn"
+        },
+        {
+          "key": "D",
+          "text": "Sốt kéo dài"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_109",
+      "index": 109,
+      "question": "Hậu quả của giảm protid huyết tương là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Rối loạn tiêu hóa"
+        },
+        {
+          "key": "C",
+          "text": "Tiểu ít"
+        },
+        {
+          "key": "D",
+          "text": "Suy hô hấp"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_110",
+      "index": 110,
+      "question": "Chế độ ăn thiếu protein kéo dài có thể gây:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Táo bón"
+        },
+        {
+          "key": "C",
+          "text": "Tiểu ít"
+        },
+        {
+          "key": "D",
+          "text": "Suy hô hấp"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_111",
+      "index": 111,
+      "question": "Hậu quả của giảm protid huyết tương, ngoại trừ:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Phù toàn thân"
+        },
+        {
+          "key": "C",
+          "text": "Trẻ em chậm lớn"
+        },
+        {
+          "key": "D",
+          "text": "Vết thương chậm tái tạo"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_112",
+      "index": 112,
+      "question": "Giảm protid huyết tương gây phù toàn thân do:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tăng tính thấm thành mạch"
+        },
+        {
+          "key": "C",
+          "text": "Giữ muối và nước"
+        },
+        {
+          "key": "D",
+          "text": "Tạo áp lực thẩm thấu"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_113",
+      "index": 113,
+      "question": "Vai trò của nước trong cơ thể là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Trẻ đang bú nước chiếm 60% trọng lượng cơ thể."
+        },
+        {
+          "key": "B",
+          "text": "Trẻ sơ sinh, nước chiếm 70% trọng lượng cơ thể."
+        },
+        {
+          "key": "C",
+          "text": "Người trưởng thành nước chiếm 80% trọng lượng cơ thể."
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_114",
+      "index": 114,
+      "question": "Vai trò của nước trong cơ thể, ngoại trừ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nước duy trì khối lượng tuần hoàn"
+        },
+        {
+          "key": "B",
+          "text": "Nước là môi trường cho mọi phản ứng hoá học"
+        },
+        {
+          "key": "C",
+          "text": "Tham gia điều hoà thân nhiệt"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_115",
+      "index": 115,
+      "question": "Vai trò của nước trong cơ thể, ngoại trừ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Giảm ma sát, sức va chạm cơ học cho các nội tạng"
+        },
+        {
+          "key": "B",
+          "text": "Não, tim, gan, thận chứa nhiều nước hơn da, xương, sụn"
+        },
+        {
+          "key": "C",
+          "text": "Các cơ quan hoạt động nhiều có tỷ lệ nước cao hơn các cơ quan khác"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_116",
+      "index": 116,
+      "question": "Phân bố nước trong cơ thể:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Khu vực trong tế bào, chiếm 60% trọng lượng cơ thể."
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Trong lòng mạch 15% trọng lượng cơ thể."
+        },
+        {
+          "key": "D",
+          "text": "Khu vực gian bào 5%. trọng lượng cơ thể."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_117",
+      "index": 117,
+      "question": "Phù xuất hiện nhanh nhất",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phù do bệnh tim"
+        },
+        {
+          "key": "B",
+          "text": "Phù do bệnh thận"
+        },
+        {
+          "key": "C",
+          "text": "Phù do bệnh gan"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_118",
+      "index": 118,
+      "question": "Vai trò các chất điện giải trong cơ thể:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Quyết định áp lực thủy tĩnh"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Quyết định áp lực Keo"
+        },
+        {
+          "key": "D",
+          "text": "Quyết định áp lực thủy tĩnh và thẩm thấu"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_119",
+      "index": 119,
+      "question": "Vai trò các chất điện giải trong cơ thể, ngoại trừ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tham gia vào các hệ thống đệm"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Điều chỉnh PH máu"
+        },
+        {
+          "key": "D",
+          "text": "Ion Calci tham gia dẫn truyền thần kinh"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_120",
+      "index": 120,
+      "question": "Lượng muối (chủ yếu là NaCl) hàng ngày cơ thể cần:",
+      "options": [
+        {
+          "key": "A",
+          "text": "&lt; 10g"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "30-50g"
+        },
+        {
+          "key": "D",
+          "text": "&gt; 50g"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_121",
+      "index": 121,
+      "question": "Calci cần được bổ sung thêm cho các đối tượng, ngoại trừ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phụ nữ có thai"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Người cao tuổi"
+        },
+        {
+          "key": "D",
+          "text": "Trẻ nhỏ"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_122",
+      "index": 122,
+      "question": "Phân bố các chất điện giải trong và ngoài tế bào:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tổng điện tích khác nhau."
+        },
+        {
+          "key": "C",
+          "text": "Protein có nhiều trong gian bào"
+        },
+        {
+          "key": "D",
+          "text": "K+, PO4--- có rất nhiều ở gian bào, lòng mạch"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_123",
+      "index": 123,
+      "question": "Phân bố các chất điện giải trong và ngoài tế bào:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tổng điện tích khác nhau."
+        },
+        {
+          "key": "C",
+          "text": "Na+, Cl- có nhiều trong tế bào"
+        },
+        {
+          "key": "D",
+          "text": "K+, PO4--- có rất nhiều ở gian bào, lòng mạch"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_124",
+      "index": 124,
+      "question": "Trao đổi nước và các chất điện giải giữa gian bào và lòng mạch:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Thành mạch cho nước, không cho chất điện giải qua lại tự do."
+        },
+        {
+          "key": "C",
+          "text": "Thành mạch cho các chất có trọng lượng phân tử lớn  (M&gt;68.000) qua lại tự do."
+        },
+        {
+          "key": "D",
+          "text": "Hầu như các phân tử protein qua được, nên lượng protein trong lòng mạch bao giờ cũng bằng ở gian bào."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_125",
+      "index": 125,
+      "question": "Trao đổi nước và các chất điện giải giữa gian bào và lòng mạch:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Thành mạch cho nước, không cho chất điện giải qua lại tự do."
+        },
+        {
+          "key": "C",
+          "text": "Thành mạch cho các chất có trọng lượng phân tử lớn  (M&gt;68.000) qua lại tự do."
+        },
+        {
+          "key": "D",
+          "text": "Hầu như các phân tử protein qua được, nên lượng protein trong lòng mạch bao giờ cũng bằng ở gian bào."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_126",
+      "index": 126,
+      "question": "Trao đổi nước và các chất điện giải giữa gian bào và lòng mạch:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Áp lực keo của Protein trong lòng mạch vào khoảng 65 mmHg, có tác dụng đẩy nước từ lòng mạch ra gian bào."
+        },
+        {
+          "key": "C",
+          "text": "Thành mạch cho các chất có trọng lượng phân tử lớn  (M&gt;68.000) qua lại tự do."
+        },
+        {
+          "key": "D",
+          "text": "Hầu như các phân tử protein qua được, nên lượng protein trong lòng mạch bao giờ cũng bằng ở gian bào."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_127",
+      "index": 127,
+      "question": "Trao đổi nước và các chất điện giải giữa trong và ngoài tế bào:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Màng tế bào cho các ion qua lại tự do"
+        },
+        {
+          "key": "B",
+          "text": "Thành phần các chất điện giải giữa hai khu vực này như nhau"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Tổng điện tích các Ion trong tế bào cao hơn ngoài tế bào"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_128",
+      "index": 128,
+      "question": "Trao đổi nước và các chất điện giải giữa trong và ngoài tế bào, ngoại trừ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Màng tế bào không cho các Ion qua lại tự do"
+        },
+        {
+          "key": "B",
+          "text": "Thành phần các chất điện giải giữa hai khu vực này khác nhau"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Nếu xảy ra sự chênh lệch áp lực thẩm thấu thì nước sẽ được trao đổi để điều chỉnh lại"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_129",
+      "index": 129,
+      "question": "Trao đổi nước và các chất điện giải giữa trong và ngoài tế bào, ngoại trừ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Màng tế bào không cho các Ion qua lại tự do"
+        },
+        {
+          "key": "B",
+          "text": "Khi màng tế bào bị tổn thương sẽ dẫn đến rối loạn thành phần các chất điện giải giữa hai khu vực."
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Nếu xảy ra sự chênh lệch áp lực thẩm thấu thì nước sẽ được trao đổi để điều chỉnh lại"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_130",
+      "index": 130,
+      "question": "Mất nước do tiêu chảy cấp:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dịch ruột là dịch toan, chứa nhiều natri, do vậy khi bị tiêu chảy cơ thể nhanh chóng rơi vào tình trạng nhiễm kiềm."
+        },
+        {
+          "key": "B",
+          "text": "Tăng bài tiết nước tiểu do máu đến thận tăng"
+        },
+        {
+          "key": "C",
+          "text": "Tăng huyết áp bù trừ"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_131",
+      "index": 131,
+      "question": "Trương lực của dạ dày có vai trò gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Giúp tiêu hóa protid"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Trung hòa acid dịch vị"
+        },
+        {
+          "key": "D",
+          "text": "Ức chế tiết acid"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_132",
+      "index": 132,
+      "question": "Một trong các yếu tố nguy cơ gây tăng tiết dịch vị là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Đái tháo đường"
+        },
+        {
+          "key": "B",
+          "text": "Nhiễm virus đường ruột"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Thiếu men lactase"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_133",
+      "index": 133,
+      "question": "Hậu quả của giảm co bóp dạ dày thường gặp nhất là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tiêu chảy cấp"
+        },
+        {
+          "key": "B",
+          "text": "Hấp thu vitamin K kém"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Tăng tiết acid"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_134",
+      "index": 134,
+      "question": "Khi giảm tiết dịch mật, hậu quả nào sau đây không đúng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Giảm hấp thu mỡ"
+        },
+        {
+          "key": "B",
+          "text": "Giảm hấp thu vitamin tan trong mỡ"
+        },
+        {
+          "key": "C",
+          "text": "Dễ chướng hơi"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_135",
+      "index": 135,
+      "question": "Nguyên nhân của giảm tiết dịch tụy thường là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Nhiễm khuẩn"
+        },
+        {
+          "key": "C",
+          "text": "Viêm phúc mạc"
+        },
+        {
+          "key": "D",
+          "text": "Loét tá tràng nhẹ"
+        },
+        {
+          "key": "E",
+          "text": "coli"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_136",
+      "index": 136,
+      "question": "Tiêu chảy do rối loạn thẩm thấu xảy ra khi:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tăng mật độ vi khuẩn ở ruột non"
+        },
+        {
+          "key": "B",
+          "text": "Tăng tiết nước và điện giải vào lòng ruột"
+        },
+        {
+          "key": "C",
+          "text": "Tăng nhu động ruột quá mức"
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_137",
+      "index": 137,
+      "question": "Biến chứng nặng của tiêu chảy mạn tính là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Suy thận cấp"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Viêm ruột hoại tử"
+        },
+        {
+          "key": "D",
+          "text": "Tăng đường huyết"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_138",
+      "index": 138,
+      "question": "Nguyên nhân tắc ruột cơ năng thường gặp nhất là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dính ruột sau mổ"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Thoát vị nghẹt"
+        },
+        {
+          "key": "D",
+          "text": "Xoắn đại tràng sigma"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_139",
+      "index": 139,
+      "question": "Thiếu men lactose bẩm sinh dẫn đến hậu quả gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Táo bón"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Tắc ruột"
+        },
+        {
+          "key": "D",
+          "text": "Viêm ruột hoại tử"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_140",
+      "index": 140,
+      "question": "Một trong các nguyên nhân gây kém hấp thu ngoài ruột là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Nhiễm ký sinh trùng đường ruột"
+        },
+        {
+          "key": "C",
+          "text": "Rối loạn men tiêu đường lactose"
+        },
+        {
+          "key": "D",
+          "text": "Cắt đoạn ruột non"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_141",
+      "index": 141,
+      "question": "Nguyên nhân nào sau đây thường gây tăng co bóp dạ dày?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Thiếu enzym tiêu hóa"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Cắt đoạn ruột"
+        },
+        {
+          "key": "D",
+          "text": "Tắc mật"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_142",
+      "index": 142,
+      "question": "Khi dạ dày tăng nhu động mạnh, hậu quả thường gặp là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hấp thu dinh dưỡng tăng"
+        },
+        {
+          "key": "B",
+          "text": "Thức ăn bị tồn đọng lâu"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Nồng độ acid giảm"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_143",
+      "index": 143,
+      "question": "Viêm loét dạ dày – tá tràng xảy ra chủ yếu do:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Yếu tố bảo vệ mạnh hơn yếu tố tấn công"
+        },
+        {
+          "key": "C",
+          "text": "Thiếu dịch mật"
+        },
+        {
+          "key": "D",
+          "text": "Không tiết được enzym tụy"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_144",
+      "index": 144,
+      "question": "Giảm tiết dịch vị thường gặp trong:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stress kéo dài"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Nhiễm Helicobacter pylori"
+        },
+        {
+          "key": "D",
+          "text": "Tăng tiết gastrin"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_145",
+      "index": 145,
+      "question": "Rối loạn tiết dịch ruột thường gây:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tăng hấp thu mỡ"
+        },
+        {
+          "key": "B",
+          "text": "Tắc ruột cấp"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Táo bón nặng"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_146",
+      "index": 146,
+      "question": "Nguyên nhân nào sau đây gây tiêu chảy do tổn thương niêm mạc ruột?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Uống nhiều nước"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Ăn nhiều chất béo"
+        },
+        {
+          "key": "D",
+          "text": "Thiếu vitamin D"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_147",
+      "index": 147,
+      "question": "Hậu quả của tiêu chảy mạn là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tăng huyết áp"
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": "Tăng tiết dịch mật"
+        },
+        {
+          "key": "D",
+          "text": "Tăng cân"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_148",
+      "index": 148,
+      "question": "Tắc ruột cơ học có thể do:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Liệt ruột sau phẫu thuật"
+        },
+        {
+          "key": "B",
+          "text": "Nhiễm khuẩn huyết"
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": "Giảm tiết enzym tụy"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_149",
+      "index": 149,
+      "question": "Giảm tiết dịch tụy gây hậu quả chính là:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Tăng hấp thu chất béo"
+        },
+        {
+          "key": "C",
+          "text": "Tăng tiết dịch mật"
+        },
+        {
+          "key": "D",
+          "text": "Giảm tiết acid dạ dày"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    },
+    {
+      "id": "q_sinhly_150",
+      "index": 150,
+      "question": "Hội chứng kém hấp thu do loạn khuẩn đường ruột thường xuất hiện khi:",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": "Ăn nhiều chất béo"
+        },
+        {
+          "key": "C",
+          "text": "Uống ít nước"
+        },
+        {
+          "key": "D",
+          "text": "Sử dụng thuốc giảm đau NSAID"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": ""
+    }
+  ]
+}

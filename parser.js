@@ -157,7 +157,7 @@ const QuizParser = {
                 if (currentOptKey) {
                     options.push({
                         key: currentOptKey,
-                        text: currentOptText.join(' ').trim()
+                        text: currentOptText.join(' ').replace(/\*/g, '').trim()
                     });
                     currentOptKey = null;
                     currentOptText = [];
@@ -179,32 +179,29 @@ const QuizParser = {
                 if (currentOptKey) {
                     options.push({
                         key: currentOptKey,
-                        text: currentOptText.join(' ').trim()
+                        text: currentOptText.join(' ').replace(/\*/g, '').trim()
                     });
                 }
 
                 let rawKey = optMatch[1];
-                let isMarkedCorrect = false;
-
-                // Nếu có dấu sao *A hoặc A* hoặc [A]
-                if (rawKey.includes('*')) {
-                    isMarkedCorrect = true;
-                }
+                const contentText = trimmed.substring(optMatch[0].length).trim();
+                let isMarkedCorrect = rawKey.includes('*') || contentText.includes('*');
                 const cleanKey = rawKey.replace(/[^A-H]/gi, '').toUpperCase();
                 if (isMarkedCorrect) {
                     correctAnswer = cleanKey;
                 }
 
                 currentOptKey = cleanKey;
-                // Nội dung phương án
-                const contentText = trimmed.substring(optMatch[0].length).trim();
-                currentOptText = [contentText];
+                currentOptText = [contentText.replace(/\*/g, '').trim()];
             } else if (inOptions) {
                 // Tiếp nối nội dung của phương án trước đó
-                currentOptText.push(trimmed);
+                if (trimmed.includes('*') && !correctAnswer && currentOptKey) {
+                    correctAnswer = currentOptKey;
+                }
+                currentOptText.push(trimmed.replace(/\*/g, '').trim());
             } else {
                 // Tiếp nối nội dung của câu hỏi
-                questionTextLines.push(trimmed);
+                questionTextLines.push(trimmed.replace(/\*/g, '').trim());
             }
         }
 
@@ -212,7 +209,7 @@ const QuizParser = {
         if (currentOptKey) {
             options.push({
                 key: currentOptKey,
-                text: currentOptText.join(' ').trim()
+                text: currentOptText.join(' ').replace(/\*/g, '').trim()
             });
         }
 
@@ -222,11 +219,10 @@ const QuizParser = {
         }
 
         // Tự động kiểm tra nếu có dấu hiệu gạch chân hoặc in đậm trong options
-        // Hoặc phương án có tiền tố *
         options.forEach(opt => {
-            if (opt.text.startsWith('*') || opt.text.endsWith('*')) {
-                opt.text = opt.text.replace(/\*/g, '').trim();
+            if (opt.text.includes('*')) {
                 if (!correctAnswer) correctAnswer = opt.key;
+                opt.text = opt.text.replace(/\*/g, '').trim();
             }
         });
 
@@ -235,7 +231,7 @@ const QuizParser = {
             index: questionNumber,
             question: questionTextLines.join('\n').trim(),
             options: options,
-            correctAnswer: correctAnswer || null, // null nếu file đề cương chưa đánh dấu, người dùng có thể chọn nhanh
+            correctAnswer: correctAnswer || null,
             explanation: explanation.trim()
         };
     },
@@ -251,13 +247,14 @@ const QuizParser = {
 
         while ((match = regex.exec(line)) !== null) {
             let rawKey = match[1];
-            let isCorrect = rawKey.includes('*');
-            let cleanKey = rawKey.replace(/[^A-H]/gi, '').toUpperCase();
             let optText = match[2].trim();
+            let isCorrect = rawKey.includes('*') || optText.includes('*');
+            let cleanKey = rawKey.replace(/[^A-H]/gi, '').toUpperCase();
+            let cleanText = optText.replace(/\*/g, '').trim();
 
             matches.push({
                 key: cleanKey,
-                text: optText,
+                text: cleanText,
                 isCorrect: isCorrect
             });
         }
@@ -271,30 +268,33 @@ const QuizParser = {
      */
     extractAnswerKeyTable(text) {
         const keyMap = {};
-        // Tìm các cụm số và chữ cái đáp án
-        // Ví dụ: 1.A, 1-A, 1: A, 1A, Câu 1: A
-        const keyRegex = /(?:câu\s*)?(\d+)[\s.:\-–]*([A-H])\b/gi;
-        
-        // Tìm vị trí của từ khóa "Đáp án" gần cuối văn bản
         const lower = text.toLowerCase();
         let searchIndex = -1;
-        const keywords = ['bảng đáp án', 'đáp án:', 'dap an:', 'answer key', 'keys:'];
+        const keywords = ['bảng đáp án', 'bang dap an', 'answer key', 'bảng trả lời', 'danh sách đáp án'];
         for (const kw of keywords) {
             const idx = lower.lastIndexOf(kw);
             if (idx > searchIndex) searchIndex = idx;
         }
 
-        // Nếu có phần bảng đáp án tách biệt
-        const textToSearch = searchIndex !== -1 ? text.substring(searchIndex) : text;
+        // CHỈ tìm kiếm bảng đáp án nếu CÓ từ khóa bảng đáp án ở cuối bài
+        // Tránh quét toàn văn bản vì sẽ nhận diện nhầm các số đo như 1 g/lít, 2 g, 10 mg...
+        if (searchIndex === -1) {
+            return {};
+        }
+
+        const textToSearch = text.substring(searchIndex);
+        const keyRegex = /(?:câu\s*)?(\d+)[\s.:\-–]+([A-H])\b/gi;
         
         let match;
+        let count = 0;
         while ((match = keyRegex.exec(textToSearch)) !== null) {
             const qNum = parseInt(match[1], 10);
             const ans = match[2].toUpperCase();
             keyMap[qNum] = ans;
+            count++;
         }
 
-        return keyMap;
+        return count >= 3 ? keyMap : {};
     },
 
     /**
@@ -389,12 +389,17 @@ const QuizParser = {
      * Tự động nhận diện các đáp án được gạch chân (<u>) thành đáp án đúng
      */
     async parseDocx(arrayBuffer) {
-        if (!window.mammoth) {
+        if (!window.mammoth && typeof mammoth === 'undefined') {
             throw new Error("Thư viện Mammoth chưa được nạp");
         }
+        const m = window.mammoth || mammoth;
+        const input = (typeof Buffer !== 'undefined' && Buffer.isBuffer(arrayBuffer))
+            ? { buffer: arrayBuffer }
+            : { arrayBuffer: arrayBuffer };
+
         // Sử dụng convertToHtml với styleMap để bảo tồn thẻ gạch chân <u>
-        const result = await mammoth.convertToHtml(
-            { arrayBuffer: arrayBuffer },
+        const result = await m.convertToHtml(
+            input,
             { styleMap: ["u => u", "strike => s"] }
         );
         let html = result.value;
