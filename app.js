@@ -8129,10 +8129,10 @@ class QuizApp {
                     </div>
 
                     <div class="bank-card-actions">
-                        <button class="btn btn-secondary btn-inspect-bank" data-id="${bank.id}" title="Xem và sửa toàn bộ câu hỏi" style="flex: 1; font-size: 13px;">
+                        <button class="btn btn-secondary btn-inspect-bank" data-id="${bank.id}" title="Xem và sửa toàn bộ câu hỏi">
                             <i class="fa-solid fa-eye"></i> Xem (${totalQuestions})
                         </button>
-                        <button class="btn btn-primary btn-study-bank" data-id="${bank.id}" title="Ôn tập bộ đề này" style="flex: 1; font-size: 13px;">
+                        <button class="btn btn-primary btn-study-bank" data-id="${bank.id}" title="Ôn tập bộ đề này">
                             <i class="fa-solid fa-book-open"></i> Ôn tập
                         </button>
                         <button class="btn btn-icon btn-export-single" data-id="${bank.id}" title="Xuất file JSON bộ đề này">

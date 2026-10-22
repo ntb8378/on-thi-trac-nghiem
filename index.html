@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3.1">
 </head>
 <body>
     <!-- Ambient Background Blobs -->
@@ -35,25 +35,25 @@
                 </div>
                 <div class="brand-text">
                     <h1>QuizMaster Pro</h1>
-                    <p>Hệ Thống Ôn Tập & Thi Thử Trắc Nghiệm Thông Minh</p>
+                    <p class="brand-subtitle">Hệ Thống Ôn Tập & Thi Thử Trắc Nghiệm Thông Minh</p>
                 </div>
             </div>
 
             <div class="header-actions">
-                <button id="btn-share-lan" class="btn btn-secondary" title="Chia sẻ để máy tính hoặc điện thoại khác cùng xem tài liệu">
-                    <i class="fa-solid fa-network-wired" style="color: var(--primary);"></i>
-                    <span id="share-lan-text">Chia sẻ LAN: http://192.168.1.15:8080</span>
-                </button>
                 <button id="btn-theme-toggle" class="btn btn-icon" title="Chuyển chế độ Sáng/Tối">
                     <i class="fa-solid fa-moon"></i>
                 </button>
-                <button id="btn-export-backup" class="btn btn-secondary" title="Sao lưu toàn bộ câu hỏi">
-                    <i class="fa-solid fa-cloud-arrow-down"></i>
-                    <span>Sao lưu</span>
+                <button id="btn-share-lan" class="btn btn-icon" title="Chia sẻ web">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <span id="share-lan-text" class="header-btn-text">Chia sẻ</span>
                 </button>
-                <button id="btn-open-import" class="btn btn-primary">
-                    <i class="fa-solid fa-file-circle-plus"></i>
-                    <span>+ Thêm Đề Cương</span>
+                <button id="btn-export-backup" class="btn btn-icon" title="Sao lưu toàn bộ câu hỏi">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span class="header-btn-text">Sao lưu</span>
+                </button>
+                <button id="btn-open-import" class="btn btn-primary btn-add-bank" title="Thêm Đề Cương">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Thêm Đề</span>
                 </button>
             </div>
         </header>
@@ -62,20 +62,24 @@
         <nav class="nav-tabs" id="main-tabs">
             <button class="tab-btn active" data-tab="tab-banks">
                 <i class="fa-solid fa-folder-open"></i>
-                <span>Thư Viện Đề Cương</span>
+                <span class="tab-text-desktop">Thư Viện Đề Cương</span>
+                <span class="tab-text-mobile">Đề thi</span>
                 <span class="badge" id="badge-bank-count">0</span>
             </button>
             <button class="tab-btn" data-tab="tab-study">
                 <i class="fa-solid fa-book-open-reader"></i>
-                <span>Ôn Tập & Học Bài</span>
+                <span class="tab-text-desktop">Ôn Tập & Học Bài</span>
+                <span class="tab-text-mobile">Ôn tập</span>
             </button>
             <button class="tab-btn" data-tab="tab-exam">
                 <i class="fa-solid fa-stopwatch"></i>
-                <span>Phòng Thi Thử</span>
+                <span class="tab-text-desktop">Phòng Thi Thử</span>
+                <span class="tab-text-mobile">Thi thử</span>
             </button>
             <button class="tab-btn" data-tab="tab-history">
                 <i class="fa-solid fa-chart-simple"></i>
-                <span>Lịch Sử Điểm Số</span>
+                <span class="tab-text-desktop">Lịch Sử Điểm Số</span>
+                <span class="tab-text-mobile">Lịch sử</span>
             </button>
         </nav>
 
@@ -101,18 +105,18 @@
 
             <!-- Bulk actions & select all -->
             <div class="bulk-actions-bar">
-                <label class="bulk-select-all">
+                <label class="bulk-select-all" for="select-all-banks">
                     <input type="checkbox" id="select-all-banks" class="custom-checkbox">
-                    <span>Chọn tất cả các bộ đề (<span id="selected-banks-count">0</span> đã chọn)</span>
+                    <span class="bulk-select-text">Chọn tất cả bộ đề (<span id="selected-banks-count">0</span> đã chọn)</span>
                 </label>
-                <div style="display: flex; gap: 10px;">
-                    <button id="btn-quick-study-selected" class="btn btn-secondary">
+                <div class="bulk-buttons-group">
+                    <button id="btn-quick-study-selected" class="btn btn-secondary btn-bulk-action">
                         <i class="fa-solid fa-book-open"></i>
-                        <span>Ôn tập các đề đã chọn</span>
+                        <span>Ôn tập đã chọn</span>
                     </button>
-                    <button id="btn-quick-exam-selected" class="btn btn-primary">
+                    <button id="btn-quick-exam-selected" class="btn btn-primary btn-bulk-action">
                         <i class="fa-solid fa-bolt"></i>
-                        <span>Thi thử các đề đã chọn</span>
+                        <span>Thi thử đã chọn</span>
                     </button>
                 </div>
             </div>
@@ -737,10 +741,10 @@ D. Không đáp án nào đúng"></textarea>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
     <!-- Preloaded Question Banks (7 Bộ Đề Chuẩn 1107 Câu) -->
-    <script src="banks_data.js"></script>
+    <script src="banks_data.js?v=3.1"></script>
 
     <!-- Application Logic -->
-    <script src="parser.js"></script>
-    <script src="app.js"></script>
+    <script src="parser.js?v=3.1"></script>
+    <script src="app.js?v=3.1"></script>
 </body>
 </html>
